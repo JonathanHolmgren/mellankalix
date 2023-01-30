@@ -34,6 +34,10 @@ app.get("/Presentkort", (req, res) => {
   res.render("giftcertificate");
 });
 
+app.get("/Alla%20Filmer", (req, res) => {
+  res.render("allMovies");
+});
+
 app.use("/static", express.static("./static"));
 app.use("/js", express.static("./js"));
 
