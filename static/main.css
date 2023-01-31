@@ -1519,6 +1519,141 @@ input[type=password]:focus {
     display: none;
   }
 }
+.movie-details-2 {
+  max-width: 900px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+@media (max-width: 750px) {
+  .movie-details-2 {
+    grid-template-columns: 100%;
+  }
+}
+.movie-details-2 > div {
+  padding: 1rem;
+}
+@media (min-width: 750px) {
+  .movie-details-2 > div {
+    grid-column: 2;
+  }
+}
+.movie-details-2 hr {
+  border: none;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, rgba(238, 238, 238, 0) 0%, #9e2a2b 50%, rgba(238, 238, 238, 0) 100%);
+  border-radius: 50%;
+  margin-block: 0.5rem 0rem;
+}
+.movie-details-2 .movie-title-2 {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  text-transform: uppercase;
+  font-family: "Fira Sans";
+  border-radius: 5px;
+  background-color: #9e2a2b;
+  padding: 1rem;
+  color: #edf2f4;
+  margin-inline: 0;
+  box-shadow: 0px 0px 3px #161a1d;
+}
+.movie-details-2 .movie-genres-2 {
+  padding: 1rem 1rem;
+  font-family: "Mukta";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.movie-details-2 .movie-description-2 {
+  padding: 1rem;
+}
+.movie-details-2 .movie-info-2 {
+  padding: 1rem;
+  width: 100%;
+}
+.movie-details-2 .movie-info-2 span:not(:nth-last-of-type(1))::after {
+  content: "|";
+  padding-inline: 0.3rem;
+  display: inline-block;
+}
+.movie-details-2 .movie-trailer-2 {
+  text-align: right;
+}
+.movie-details-2 .movie-trailer-2 a {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: #edf2f4;
+}
+.movie-details-2 .movie-poster-2 {
+  aspect-ratio: 10/16;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #edf2f4;
+  box-shadow: 0px 0px 5px #161a1d;
+  padding: 0.5rem;
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 180px;
+  margin-inline: auto;
+  margin-top: 3rem;
+}
+.movie-details-2 .movie-showtimes-2 {
+  padding-bottom: 2rem;
+}
+.movie-details-2 .movie-showtimes-2 h2 {
+  text-transform: uppercase;
+  font-family: "Mukta";
+}
+.movie-details-2 .movie-showtimes-2 .movie-showtimes-list-2 {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.movie-details-2 .movie-showtimes-2 .movie-showtimes-list-2 li {
+  padding: 1rem;
+  width: 100%;
+  display: contents;
+  margin-bottom: 1rem;
+}
+.movie-details-2 .movie-showtimes-2 .movie-showtimes-list-2 li span {
+  text-transform: uppercase;
+  display: block;
+}
+.movie-details-2 .movie-showtimes-2 .movie-showtimes-list-2 li:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  grid-column: 1/-1;
+  width: 100%;
+  min-width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, rgba(238, 238, 238, 0) 0%, #9e2a2b 50%, rgba(238, 238, 238, 0) 100%);
+  border-radius: 50%;
+  margin-block: 1.5rem;
+}
+.movie-details-2 .movie-showtimes-2 .movie-showtimes-list-2 .movie-tickets-2 {
+  place-self: end;
+  text-decoration: none;
+  font-family: "Mukta";
+  padding: 0.5em clamp(1.8rem, 3vw, 2.5rem);
+  color: #edf2f4;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #9e2a2b;
+  background-image: linear-gradient(to bottom, #540b0e 0%, #9e2a2b 100%);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  transition: all 300ms ease-in-out;
+}
+.movie-details-2 .movie-showtimes-2 .movie-showtimes-list-2 .movie-tickets-2:hover {
+  background-position: -200%;
+  transition: all 300ms ease-in-out;
+}
+
 :root {
   background-color: #d9d9d9;
   color: #161a1d;

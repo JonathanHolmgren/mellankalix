@@ -1,9 +1,9 @@
-import { getMovies } from "./myAPI.js";
+//import { getMovies } from "./myAPI.js";
 
-const moviesList = document.querySelector("#movies-filter");
-const cinemaMovies = await getMovies();
+//const moviesList = document.querySelector("#movies-filter");
+//const cinemaMovies = await getMovies();
 
-//Render some data to DOM from API
+/*//Render some data to DOM from API
 const displayMovies = (movies) => {
   const htmlString = movies
     .map((movie, index) => {
@@ -25,7 +25,7 @@ const displayMovies = (movies) => {
     })
     .join("");
   moviesList.innerHTML = htmlString;
-};
+};*/
 
 //Open search field
 const filterSearch = () => {
