@@ -1,9 +1,19 @@
-export async function getMovies() {
-    const res = await fetch('static/database.json');
-    const data = await res.json();
+import fetch from "node-fetch";
 
-    return data;
-};
+const API_BASE = 'https://plankton-app-xhkom.ondigitalocean.app/api';
+
+
+export async function getMovies() {
+    const res = await fetch(API_BASE + '/movies');
+    const payload = await res.json();
+    return payload.data;
+  }
+  
+  export async function getMovie(id) {
+    const res = await fetch(API_BASE + '/movies/' + id);
+    const payload = await res.json();
+    return payload.data;
+  }
 
 export async function getShowTimes() {
     const res = await fetch('static/showtimes.json');
@@ -11,3 +21,7 @@ export async function getShowTimes() {
 
     return data;
 };
+
+
+
+

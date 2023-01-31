@@ -1,3 +1,12 @@
-<section class="movie-details">
-			<h2>Laddar film...</h2>
-		</section>
+<a href="/">Back to home page</a>
+<article class="movie-details">
+  <h1 class="movie-title">{{ movie.attributes.title }}</h1>
+  <div class="movie-description">
+    {{{ markdown movie.attributes.intro }}}
+  </div>
+  {{#if movie.attributes.image }}
+  <img src="{{ movie.attributes.image.url }}" class="movie-poster">
+  {{/if }}
+</article>
+
+
