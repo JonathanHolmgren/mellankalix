@@ -1,6 +1,6 @@
 import request from "supertest";
-import app from "../js/app.js";
-import { getMovies } from "../js/myAPI.js";
+import app from "../src/app.js";
+import { getMovies } from "../src/myAPI.js";
 
 test("fdfd", async () => {
   const movies = await getMovies();

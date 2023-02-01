@@ -2,7 +2,7 @@
   "name": "mellankalix",
   "version": "1.0.0",
   "description": "Put pre-commit in your \".git/hooks/\" folder (now updated to include main) - It prevents commits to main branch\r then in your console enter the command \"chmod +x .git/hooks/pre-commit\" to make it executeble!",
-  "main": "index.js",
+  "main": "./src/index.js",
   "type": "module",
   "dependencies": {
     "abbrev": "^1.1.1",

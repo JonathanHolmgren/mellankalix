@@ -1,7 +1,7 @@
 import express from "express";
 import { engine } from "express-handlebars";
 import { marked } from "marked";
-import { getMovie, getMovies } from "../js/myAPI.js";
+import { getMovie, getMovies } from "./myAPI.js";
 
 const app = express();
 app.engine(
